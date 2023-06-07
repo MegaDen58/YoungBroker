@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="513.0" prefWidth="715.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.young.LessonController">
+   <children>
+      <Label alignment="CENTER" layoutX="216.0" layoutY="14.0" prefHeight="107.0" prefWidth="283.0" text="Знания">
+         <font>
+            <Font name="System Bold" size="58.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelText" layoutX="14.0" layoutY="121.0" prefHeight="323.0" prefWidth="687.0" text="Label" wrapText="true">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Label>
+      <ImageView fitHeight="34.0" fitWidth="45.0" layoutX="639.0" layoutY="465.0" onMouseClicked="#goNext" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../picture/exit1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="34.0" fitWidth="45.0" layoutX="546.0" layoutY="465.0" onMouseClicked="#goBack" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../picture/exit.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelCounter" alignment="CENTER" layoutX="580.0" layoutY="465.0" prefHeight="34.0" prefWidth="60.0" text="Label" />
+      <ImageView fx:id="backButton" fitHeight="77.0" fitWidth="103.0" layoutX="22.0" layoutY="14.0" onMouseClicked="#goMain" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../picture/exit.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
